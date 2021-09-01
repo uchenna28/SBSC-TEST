@@ -8,8 +8,7 @@ import { AuthComponent } from './auth/auth.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app.module-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
-import { DataAndColorManagementComponent } from './data-and-color-management/data-and-color-management.component';
+import { RouterModule } from '@angular/router'; 
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardOverviewComponent } from './dashboard-overview/dashboard-overview.component';
@@ -20,8 +19,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
   declarations: [
     AppComponent,
     AuthComponent,
-    DashboardComponent,
-    DataAndColorManagementComponent,
+    DashboardComponent, 
     SidebarComponent,
     NavbarComponent,
     DashboardOverviewComponent,
