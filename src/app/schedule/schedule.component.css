@@ -1,0 +1,14 @@
+.appointment{
+    overflow: scroll;
+  }
+
+  .avatar{
+    width: 35px;
+    height: auto;
+    border: 1px #00CFDE;
+    border-radius: 50%;
+  }
+  
+  .bg-row{
+    background-color: #fcfcfc;
+  }

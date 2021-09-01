@@ -1,0 +1,30 @@
+import logo from
+<div class="sidebarwrapper">
+  <div class="Logo">
+    <img src="../../assets/img/HealthLogo.svg"/><span>Health Lite</span>
+  </div>
+  <div class="SidebarTabs active">
+    <a  [routerLink]="['/dashboard']" [routerLinkActive]="['active']"><img src="../../assets/img/DashIcon.svg"/><span>Dashboard</span></a>
+  </div>
+  <div class="SidebarTabs">
+    <a href="#"><img src="../../assets/img/RoomIcon.svg"/><span>Waiting Room</span></a>
+  </div>
+  <div class="SidebarTabs">
+    <a  (click)="showSchedule()"  [routerLinkActive]="['active']"><img src="../../assets/img/ScheduleIcon.svg"/><span>Schedule</span></a>
+  </div>
+  <div class="SidebarTabs">
+    <a href="#"><img src="../../assets/img/PatientIcon.svg"/><span>My Patients</span></a>
+  </div>
+  <div class="SidebarTabs">
+    <a href="#"><img src="../../assets/img/NoteIcon.svg"/><span>Notes</span></a>
+  </div>
+  <div class="SidebarTabs">
+    <a href="#"><img src="../../assets/img/ChatIcon.svg"/><span>Chats</span></a>
+  </div>
+  <div class="SidebarTabs mt-5">
+    <a href="#"><img src="../../assets/img/MyProfileIcon.svg"/><span>MyProfile</span></a>
+  </div>
+  <div class="SidebarTabs">
+    <a href="#"><img src="../../assets/img/SettingsIcon.svg"/><span>Settings</span></a>
+  </div>
+</div>

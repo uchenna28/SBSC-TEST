@@ -1,0 +1,75 @@
+.sidebarwrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #1565d8;
+  z-index: 1;
+  border-right: 2px solid #fbfbfb;
+}
+
+.Logo {
+  width: 100vw;
+  margin: 20px 0 0 auto;
+}
+
+.SidebarTabs {
+  margin: 20px 0 0 auto;
+  font-size: 23px;
+}
+
+.active {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  background: #1d2b4f;
+}
+
+a {
+  margin: 7px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+  padding-left: 40px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+a:hover {
+  background: #1d2b4f;
+  box-shadow: 1 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  font-weight: 900;
+  color: #fff;
+}
+
+a::selection {
+  color: #eb5757;
+}
+
+img {
+  margin: auto 10px;
+}
+
+span {
+  padding-left: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+/* @media screen and (max-width: 580px) {
+    display: ${({ isDefault }) => (isDefault ? 'none' : '')};
+    ${'' /* z-index: ${({ isDefault }) => (isDefault ? "" : 1)}; */

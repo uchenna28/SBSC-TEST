@@ -1,0 +1,93 @@
+<body class="g-sidenav-show bg-gray-100" style="font-family: Nunito Sans">
+  <app-sidebar></app-sidebar>
+  <main
+    class="main-content mt-1 border-radius-lg"
+    style="background-color: #f2f7fc; margin-left: 280px; padding-right: 20px"
+  >
+    <!-- Navbar -->
+    <app-navbar></app-navbar>
+
+    <div class="container-fluid my-5">
+      <div class="row pb-2">
+        <div class="col-md-12">
+          <div
+            class="card"
+            style="height: 200px !important; background-color: #1565d8"
+          >
+            <div class="card-body" style="margin-bottom: -50px !important">
+              <div class="row">
+                <div class="col-md-6 float-left">
+                    <div class="d-flex flex-column ">
+                        <p class="mb-1 text-bold"> </p>
+                        <h6 class="font-weight-bolder mt-4" style="color: #E5E5E5;">WELCOME DR. Fayemi David</h6>
+                        <p class=" mb-1 text-light" style="font-size: 12px;">See overview of analytics and reporting metrics
+                          and a lot more interesting stuffs you can do here.</p>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <button class="text-body shadow btn btn-light border-radius-xl p-3 text-sm font-weight-bold" style="font-size: 12px ;">
+                              View Your Appointment
+                            </button>
+                          </div>
+                          <div class="col-md-6">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4 d-flex justify-content-end">
+                    <img src="../../assets/img/NurseIcon.png" width="150px" height="150px"/> 
+                </div>
+
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-4">
+                <img style="width: 320px; height: auto;" src="../../assets/img/Calendar.svg" />
+
+                <div class="card my-3 border-radius-md" style="height: 430px;">
+
+                </div>
+            </div>
+            <div class="col-md-8 card my-1"> 
+                <div class="">
+                <div class="d-flex justify-content-between pt-4 mb-0 pb-0">
+                    <div>
+                    <h6 class="font-weight-bold">Thursday-18th February</h6>
+                    </div> 
+                    <div class="">
+                    <a>View all</a>
+                    </div>
+                    
+                </div>
+                <div class="appointment "  style="height: 730px">
+
+                    <div class="row " *ngFor="let appointment of appointments; index as i">
+                        <div class="col-md-2">
+                        <small>{{appointment?.createdAt | date: 'h:mm a'}}</small>
+                        </div>
+                        <div class="col-md-10 bg-row my-2">
+                        <div class="row mt-2">
+                            <div class="col-md-2">
+                            <img src="{{appointment?.avatar}}" class="avatar" />
+                            </div>
+                            <div class="col-md-5">
+                            <p>{{appointment?.name | titlecase}}</p>
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-2">
+                            <p>...</p>
+                            </div>
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+                     
+            </div>  
+        </div>
+    </div>
+  </main>
+</body>
